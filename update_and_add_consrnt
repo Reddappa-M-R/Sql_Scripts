@@ -1,0 +1,10 @@
+
+update ubi_accel.config 
+set config_level = upper(config_level) 
+
+delete from ubi_accel.config 
+where config_id >4
+
+alter table
+ubi_accel.config 
+add CONSTRAINT unique_combination_constraint UNIQUE (config_instance_id, config_key_id, config_value)
