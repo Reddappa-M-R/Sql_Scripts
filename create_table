@@ -1,0 +1,5 @@
+create table (
+  id serial
+  name varchar(100)
+  description varchar(500)
+)
