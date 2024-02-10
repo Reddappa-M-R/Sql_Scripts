@@ -1,0 +1,4 @@
+insert into table (name, description)
+values
+('Reddappa M R', 'Data Engineer'),
+('Rocky Reddy', 'Scientist');
